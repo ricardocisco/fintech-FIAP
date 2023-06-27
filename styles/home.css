@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Estilo Container */
+.container {
+  background-color: #fffdfda4;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Estilo do cabecalho/navbar */
+
+.nav-page {
+  display: flex;
+  height: 125px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-page h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.nav-img {
+  display: none;
+}
+
+/* Estilo do saldo */
+.box-saldo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.box-saldo h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.box-ver {
+  display: flex;
+}
+
+.box-ver p {
+  font-size: 22px;
+}
+
+.box-ver img {
+  margin-left: 15px;
+}
+
+/* Estilo opçoes  */
+.hotbar {
+  margin-top: 15px;
+}
+
+.hotbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Estilo extrato e transferências */
+.box-extrato {
+  margin-top: 15px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  height: 40px;
+  width: 40px;
+  background-color: #e1e1e1;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.card-extrato {
+  background-color: #e1e1e1;
+  height: 50px;
+  display: flex;
+  margin-top: 5px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/* estilo rodapé */
+
+.rodape-bar ul {
+  border-radius: 30px;
+  margin-top: 60px;
+  height: 60px;
+  background-color: #e1e1e1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .nav-page {
+    background-color: #e1e1e1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    width: 100%;
+  }
+
+  .nav-page h1 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .box-saldo h3 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .box-ver p {
+    font-size: 20px;
+  }
+
+  .card {
+    margin: 2px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+  }
+
+  .nav-img {
+    display: block;
+  }
+}

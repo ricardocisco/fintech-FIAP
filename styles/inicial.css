@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.nav-bank 
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bank li 
+{
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-bank li h1 
+{
+        font-size: 33px;
+        font-weight: 300;
+}
+
+.nav-icon 
+{
+    display: none;
+}
+
+.main-bank 
+{
+    display: flex;
+    width: 500px;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-bank h3 
+{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.main-bank input 
+{
+    padding: 16px 2px;
+    margin-top: 2px;
+    background-color: #e1e1e1;
+    border: none;
+    width: 300px;
+    border: 1px #696969a6 solid;
+    border-radius: 5px;
+}
+
+.main-bank .loguin-senha 
+{
+    margin-top: 20px;
+}
+
+.esqueci-criar 
+{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.esqueci-criar a 
+{
+    font-size: 13px;
+    margin-top: 5px;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+.secao-botao 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.secao-botao button 
+{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.secao-botao .botao-entrar 
+{
+    align-self: center;
+    border: none;
+    border-radius: 50px;
+    border: 1px #696969a6 solid;
+    height: 40px;
+    width: 200px;
+}
+
+.secao-botao .botao-estilo 
+{
+    align-self: center;
+    margin-top: 30px;
+    border: none;
+    border: 1px #696969a6 solid;
+    height: 50px;
+    width: 300px;
+    border-radius: 50px;
+}
+
+.secao-botao .botao p 
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 14px;
+}
+
+@media (max-width: 720px) 
+{
+    .container 
+    {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .nav-bank
+    {
+        position: relative;
+        top: -8%;
+        margin: 15px;
+    }
+
+    .nav-bank li
+    {
+        margin: 20px;
+    }
+
+    .nav-icon 
+    {
+        display: block;
+    }
+
+    .main-bank 
+    {
+        width: 100%;
+    }
+}
